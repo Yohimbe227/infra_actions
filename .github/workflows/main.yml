@@ -50,8 +50,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to Docker Hub
         # Пуш образа в Docker Hub
+
         uses: docker/build-push-action@v2
         with:
           push: true
           tags: Yohimbe/repo-1:latest
-
